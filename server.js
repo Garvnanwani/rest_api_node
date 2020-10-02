@@ -14,7 +14,7 @@ db.once('open', () => console.log('Database connected'));
 
 app.use(express.json());
 
-const subscribursRouter = require('./routes/subscriburs');
+const subscribursRouter = require('./routes/subscribers');
 app.use('/subscribers', subscribursRouter);
 
 app.listen(3000, () => {
