@@ -14,7 +14,8 @@ db.once('open', () => console.log('Database connected'));
 
 app.use(express.json());
 
-const subscribursRouter = require('./routes/subscribursRouter');
+const subscribursRouter = require('./routes/subscriburs');
+app.use('/subscribers', subscribursRouter);
 
 app.listen(3000, () => {
     console.log('Server started on PORT: 3000');
